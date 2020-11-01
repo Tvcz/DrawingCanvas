@@ -1,0 +1,20 @@
+#background {
+  background-image: url();
+  background-color: black;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.options {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#displayOutput {
+  border: 5px solid white;
+}
+
+#displayContainer {
+  padding-top: 5%;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Drawing Canvas</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="background">
+    <span class="options" align="left">
+      <input id="colorPicker" type="color" value="#FFFFFF" onchange="changeColor(this)">
+      &nbsp; Brush Size:
+      <input id="brushPicker" type="number" style="width:30px" min="0" max="99" value="5" onchange="changeBrush(this)">
+      &nbsp;
+      <button id="clearButton" onclick="clearCanvas()">Clear Canvas</button>
+    </span>
+    <div id="displayContainer" align="center">
+      <canvas id="displayOutput" height="450" width="1000" onmousedown="triggerDrawOn(event)" onmouseup="triggerDrawOff()" onmousemove="drawRectangle(event)"><canvas>
+    </div>
+    <span class="options" align="left">
+      <button id="webEffectButton" onclick="renderWebEffect()">Web Effect</button>
+    </span>
+    <script src="script.js"></script>
+  </body>
+</html>
